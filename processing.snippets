@@ -130,8 +130,8 @@ snippet set
 snippet println
 	println("${1:`fnamemodify(bufname("%"),":t:r")`}::${2:method}() "${3: +} ${4});
 #println string
-snippet print
-	println("${1}")
+snippet pr
+	println("${1}");
 #setup draw
 snippet setup
 	void setup(){
@@ -282,7 +282,7 @@ snippet gl gl clear
 
 #frame operations
 snippet fr framerate
-	framerate(${1:30})
+	frameRate(${1:30});
 	${2}
 snippet fr frameRate
 	frameRate
